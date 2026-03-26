@@ -1,3 +1,4 @@
+@plugins/tools/claude-code/templates/CLAUDE.md
 # Claude Skills Project
 
 This repository contains modular, self-contained skills that extend Claude's capabilities with specialized knowledge, workflows, and tools.
