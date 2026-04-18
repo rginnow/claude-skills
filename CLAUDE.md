@@ -190,8 +190,9 @@ Main instructional content goes here...
 #### Optional YAML Properties
 
 - `license`: License name or filename reference
-- `allowed-tools`: Pre-approved tools list (Claude Code support only)
 - `metadata`: Key-value string pairs for client-specific properties
+
+**Do not use `allowed-tools` in skill frontmatter.** Enforced by `test/validate-plugin.nu` and the skill-quality scorecard. Skills keep frontmatter minimal (`name`, `description`, optional `license`). Tool filtering applies to **agents** — declare the allowlist via the agent's `tools:` frontmatter field (see `/claude-code:claude-agents`), not on the skill the agent loads.
 
 #### Markdown Body
 
